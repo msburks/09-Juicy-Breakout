@@ -156,6 +156,6 @@ amount = 60
 lifetime = 2.25
 process_material = SubResource( 7 )
 [connection signal="pressed" from="Main Menu" to="." method="_on_Button_pressed"]
-[connection signal="pressed" from="Secret" to="." method="_on_Button_pressed"]
 [connection signal="pressed" from="Secret" to="." method="_on_Main_Menu2_pressed"]
 [connection signal="pressed" from="Secret" to="." method="_on_Secret_pressed"]
+[connection signal="pressed" from="Secret" to="." method="_on_Button_pressed"]
