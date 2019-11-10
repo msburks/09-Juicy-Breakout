@@ -103,16 +103,16 @@ text = "Story Mode"
 
 [node name="Medium Button" type="Button" parent="."]
 margin_left = 256.0
-margin_top = 416.0
+margin_top = 384.0
 margin_right = 321.0
-margin_bottom = 448.0
+margin_bottom = 416.0
 text = "Gallery"
 
 [node name="Hard Button" type="Button" parent="."]
 margin_left = 704.0
-margin_top = 416.0
+margin_top = 384.0
 margin_right = 768.0
-margin_bottom = 448.0
+margin_bottom = 416.0
 text = "Credits"
 
 [node name="Ornament" type="Sprite" parent="."]
