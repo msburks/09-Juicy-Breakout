@@ -87,9 +87,8 @@ custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 0.427451, 0.0313726, 0.0313726, 1 )
 text = "
 --------------------   Credits   --------------------
-Game design:     	Michael burks
-Art:                michael burks
-Sound Design    michael burks
+
+Game design, Art & sound : Michael Burks
 
 
 "

@@ -290,9 +290,16 @@ position = Vector2( 927.67, 301.25 )
 scale = Vector2( 0.401374, 1.24479 )
 texture = ExtResource( 6 )
 
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = 848.0
+margin_top = 32.0
+margin_right = 1008.0
+margin_bottom = 128.0
+color = Color( 0.231373, 0.235294, 0.270588, 1 )
+
 [node name="Logo" type="Sprite" parent="."]
-position = Vector2( 928, 82.469 )
-scale = Vector2( 0.250687, 0.318913 )
+position = Vector2( 928, 78.5 )
+scale = Vector2( 0.25, 0.275194 )
 texture = ExtResource( 7 )
 
 [node name="Menu Border O" type="ColorRect" parent="."]
