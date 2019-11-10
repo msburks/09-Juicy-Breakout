@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/7. Pope Greg.wav-5e8954128c52b99aa41f9ac711998aca.sample"
+
+[deps]
+
+source_file="res://Assets/7. Pope Greg.wav"
+dest_files=[ "res://.import/7. Pope Greg.wav-5e8954128c52b99aa41f9ac711998aca.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

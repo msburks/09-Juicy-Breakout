@@ -1,0 +1,164 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://Scripts/MainMenu.gd" type="Script" id=1]
+[ext_resource path="res://Assets/stone wall.jpg" type="Texture" id=2]
+[ext_resource path="res://Assets/JuiceBox-1.png.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Ornament-1.png.png" type="Texture" id=4]
+[ext_resource path="res://Assets/7. Pope Greg.wav" type="AudioStream" id=5]
+[ext_resource path="res://Assets/Torch-1.png.png" type="Texture" id=6]
+
+[sub_resource type="Gradient" id=1]
+offsets = PoolRealArray( 0, 0.355556, 0.933333, 1 )
+colors = PoolColorArray( 0.734131, 0.913761, 0.96875, 1, 0.9375, 0.514812, 0.285645, 1, 1, 0, 0, 1, 0.972656, 0.144171, 0.0341949, 1 )
+
+[sub_resource type="GradientTexture" id=2]
+gradient = SubResource( 1 )
+
+[sub_resource type="Curve" id=3]
+_data = [ Vector2( 0, 1 ), 0.0, 0.0, 0, 0, Vector2( 1, 0.45908 ), 0.0, 0.0, 0, 0 ]
+
+[sub_resource type="CurveTexture" id=4]
+curve = SubResource( 3 )
+
+[sub_resource type="ParticlesMaterial" id=5]
+emission_shape = 2
+emission_box_extents = Vector3( 3, 18, 1 )
+flag_disable_z = true
+spread = 5.0
+gravity = Vector3( 0, 98, 0 )
+initial_velocity = 50.0
+angular_velocity = 4.58379e-41
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+linear_accel = 5.0
+angle = 5.0
+scale = 20.0
+scale_curve = SubResource( 4 )
+color_ramp = SubResource( 2 )
+
+[node name="Main Menu" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="Wall" type="Sprite" parent="."]
+position = Vector2( 785.499, 119.615 )
+scale = Vector2( 1.13333, 0.7 )
+texture = ExtResource( 2 )
+
+[node name="Wall2" type="Sprite" parent="."]
+position = Vector2( 256, 456 )
+scale = Vector2( 1.06667, 0.7 )
+texture = ExtResource( 2 )
+
+[node name="Wall3" type="Sprite" parent="."]
+position = Vector2( 784.754, 455.623 )
+scale = Vector2( 1.13333, 0.7 )
+texture = ExtResource( 2 )
+
+[node name="Wall4" type="Sprite" parent="."]
+position = Vector2( 247.597, 119.632 )
+scale = Vector2( 1.1, 0.7 )
+texture = ExtResource( 2 )
+
+[node name="BigBorder" type="ColorRect" parent="."]
+margin_left = 192.0
+margin_top = 64.0
+margin_right = 832.0
+margin_bottom = 512.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="Border" type="ColorRect" parent="."]
+margin_left = 224.0
+margin_top = 96.0
+margin_right = 800.0
+margin_bottom = 480.0
+color = Color( 0.0901961, 0.129412, 0.227451, 1 )
+
+[node name="JuiceBorder" type="ColorRect" parent="."]
+margin_left = 256.0
+margin_top = 128.0
+margin_right = 768.0
+margin_bottom = 352.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="JuiceBorder2" type="ColorRect" parent="."]
+margin_left = 264.0
+margin_top = 136.0
+margin_right = 759.0
+margin_bottom = 344.0
+color = Color( 0.231373, 0.235294, 0.270588, 1 )
+
+[node name="Logo" type="Sprite" parent="."]
+position = Vector2( 511.5, 240 )
+scale = Vector2( 0.773438, 0.65 )
+texture = ExtResource( 3 )
+
+[node name="Easy Button" type="Button" parent="."]
+margin_left = 384.0
+margin_top = 384.0
+margin_right = 640.0
+margin_bottom = 448.0
+text = "Story Mode"
+
+[node name="Medium Button" type="Button" parent="."]
+margin_left = 256.0
+margin_top = 416.0
+margin_right = 321.0
+margin_bottom = 448.0
+text = "Gallery"
+
+[node name="Hard Button" type="Button" parent="."]
+margin_left = 704.0
+margin_top = 416.0
+margin_right = 768.0
+margin_bottom = 448.0
+text = "Credits"
+
+[node name="Ornament" type="Sprite" parent="."]
+position = Vector2( 928, 416 )
+scale = Vector2( 1.25, 1.625 )
+texture = ExtResource( 4 )
+
+[node name="Ornament2" type="Sprite" parent="."]
+position = Vector2( 96, 416 )
+scale = Vector2( 1.25, 1.625 )
+texture = ExtResource( 4 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+volume_db = -5.0
+autoplay = true
+
+[node name="Torch L" type="Sprite" parent="."]
+position = Vector2( 96, 136 )
+scale = Vector2( 2, 1.625 )
+texture = ExtResource( 6 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Particles2D" type="Particles2D" parent="Torch L"]
+show_behind_parent = true
+position = Vector2( 1.31975, -18.7916 )
+rotation = -2.33176
+scale = Vector2( 0.615385, 0.5 )
+amount = 50
+process_material = SubResource( 5 )
+
+[node name="Torch R" type="Sprite" parent="."]
+position = Vector2( 928, 136 )
+scale = Vector2( 2, 1.625 )
+texture = ExtResource( 6 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Particles2D2" type="Particles2D" parent="Torch R"]
+show_behind_parent = true
+position = Vector2( 2.22852, -19.5663 )
+rotation = -2.33176
+scale = Vector2( 0.615384, 0.5 )
+amount = 50
+process_material = SubResource( 5 )
+[connection signal="pressed" from="Easy Button" to="." method="_on_Easy_Button_pressed"]
+[connection signal="pressed" from="Medium Button" to="." method="_on_Medium_Button_pressed"]
+[connection signal="pressed" from="Hard Button" to="." method="_on_Hard_Button_pressed"]

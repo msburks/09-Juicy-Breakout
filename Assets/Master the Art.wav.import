@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Master the Art.wav-430c32e73469fa08aac47fa4ea7cb656.sample"
+
+[deps]
+
+source_file="res://Assets/Master the Art.wav"
+dest_files=[ "res://.import/Master the Art.wav-430c32e73469fa08aac47fa4ea7cb656.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0
