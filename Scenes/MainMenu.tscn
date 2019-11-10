@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://Scripts/MainMenu.gd" type="Script" id=1]
 [ext_resource path="res://Assets/stone wall.jpg" type="Texture" id=2]
@@ -6,6 +6,8 @@
 [ext_resource path="res://Assets/Ornament-1.png.png" type="Texture" id=4]
 [ext_resource path="res://Assets/7. Pope Greg.wav" type="AudioStream" id=5]
 [ext_resource path="res://Assets/Torch-1.png.png" type="Texture" id=6]
+[ext_resource path="res://Assets/border wall.png" type="Texture" id=7]
+[ext_resource path="res://Assets/Eye-1.png.png" type="Texture" id=8]
 
 [sub_resource type="Gradient" id=1]
 offsets = PoolRealArray( 0, 0.355556, 0.933333, 1 )
@@ -60,11 +62,11 @@ scale = Vector2( 1.1, 0.7 )
 texture = ExtResource( 2 )
 
 [node name="BigBorder" type="ColorRect" parent="."]
-margin_left = 192.0
+margin_left = 192.08
 margin_top = 64.0
-margin_right = 832.0
+margin_right = 832.08
 margin_bottom = 512.0
-color = Color( 0, 0, 0, 1 )
+color = Color( 0.298039, 0.231373, 0.0156863, 1 )
 
 [node name="Border" type="ColorRect" parent="."]
 margin_left = 224.0
@@ -114,12 +116,12 @@ margin_bottom = 448.0
 text = "Credits"
 
 [node name="Ornament" type="Sprite" parent="."]
-position = Vector2( 928, 416 )
+position = Vector2( 960, 416 )
 scale = Vector2( 1.25, 1.625 )
 texture = ExtResource( 4 )
 
 [node name="Ornament2" type="Sprite" parent="."]
-position = Vector2( 96, 416 )
+position = Vector2( 64, 416 )
 scale = Vector2( 1.25, 1.625 )
 texture = ExtResource( 4 )
 
@@ -129,7 +131,7 @@ volume_db = -5.0
 autoplay = true
 
 [node name="Torch L" type="Sprite" parent="."]
-position = Vector2( 96, 136 )
+position = Vector2( 64, 136 )
 scale = Vector2( 2, 1.625 )
 texture = ExtResource( 6 )
 __meta__ = {
@@ -145,7 +147,7 @@ amount = 50
 process_material = SubResource( 5 )
 
 [node name="Torch R" type="Sprite" parent="."]
-position = Vector2( 928, 136 )
+position = Vector2( 960, 136 )
 scale = Vector2( 2, 1.625 )
 texture = ExtResource( 6 )
 __meta__ = {
@@ -159,6 +161,226 @@ rotation = -2.33176
 scale = Vector2( 0.615384, 0.5 )
 amount = 50
 process_material = SubResource( 5 )
+
+[node name="Top Wall" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 272, 79.9811 )
+scale = Vector2( 1.5, 1 )
+texture = ExtResource( 7 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite2" type="Sprite" parent="Top Wall"]
+position = Vector2( 31.9866, 0 )
+texture = ExtResource( 7 )
+
+[node name="Sprite3" type="Sprite" parent="Top Wall"]
+position = Vector2( 63.9715, -0.00836182 )
+texture = ExtResource( 7 )
+
+[node name="Sprite4" type="Sprite" parent="Top Wall"]
+position = Vector2( 95.9676, -0.00498199 )
+texture = ExtResource( 7 )
+
+[node name="Sprite6" type="Sprite" parent="Top Wall"]
+position = Vector2( 127.967, -0.00481415 )
+texture = ExtResource( 7 )
+
+[node name="Sprite7" type="Sprite" parent="Top Wall"]
+position = Vector2( 159.969, -0.00853729 )
+texture = ExtResource( 7 )
+
+[node name="Sprite8" type="Sprite" parent="Top Wall"]
+position = Vector2( 191.969, -0.0133057 )
+texture = ExtResource( 7 )
+
+[node name="Sprite9" type="Sprite" parent="Top Wall"]
+position = Vector2( 223.963, -0.00708771 )
+texture = ExtResource( 7 )
+
+[node name="Sprite10" type="Sprite" parent="Top Wall"]
+position = Vector2( 255.959, -0.00865173 )
+texture = ExtResource( 7 )
+
+[node name="Sprite11" type="Sprite" parent="Top Wall"]
+position = Vector2( 287.969, -0.0136948 )
+texture = ExtResource( 7 )
+
+[node name="Sprite12" type="Sprite" parent="Top Wall"]
+position = Vector2( 319.969, -0.0188675 )
+texture = ExtResource( 7 )
+
+[node name="Bottom Wall" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 264, 495.458 )
+scale = Vector2( 1.5, 1 )
+texture = ExtResource( 7 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite2" type="Sprite" parent="Bottom Wall"]
+position = Vector2( 31.9866, 0 )
+texture = ExtResource( 7 )
+
+[node name="Sprite3" type="Sprite" parent="Bottom Wall"]
+position = Vector2( 63.9715, -0.00836182 )
+texture = ExtResource( 7 )
+
+[node name="Sprite5" type="Sprite" parent="Bottom Wall"]
+position = Vector2( 95.9676, -0.00498199 )
+texture = ExtResource( 7 )
+
+[node name="Sprite6" type="Sprite" parent="Bottom Wall"]
+position = Vector2( 127.967, -0.00481415 )
+texture = ExtResource( 7 )
+
+[node name="Sprite7" type="Sprite" parent="Bottom Wall"]
+position = Vector2( 159.969, -0.00853729 )
+texture = ExtResource( 7 )
+
+[node name="Sprite8" type="Sprite" parent="Bottom Wall"]
+position = Vector2( 191.969, -0.0133057 )
+texture = ExtResource( 7 )
+
+[node name="Sprite9" type="Sprite" parent="Bottom Wall"]
+position = Vector2( 223.963, -0.00708771 )
+texture = ExtResource( 7 )
+
+[node name="Sprite10" type="Sprite" parent="Bottom Wall"]
+position = Vector2( 255.959, -0.00865173 )
+texture = ExtResource( 7 )
+
+[node name="Sprite11" type="Sprite" parent="Bottom Wall"]
+position = Vector2( 287.969, -0.0136948 )
+texture = ExtResource( 7 )
+
+[node name="Sprite12" type="Sprite" parent="Bottom Wall"]
+position = Vector2( 319.969, -0.0188675 )
+texture = ExtResource( 7 )
+
+[node name="Left Wall" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 192.08, 32 )
+rotation = 1.5708
+scale = Vector2( 1.5, 1 )
+texture = ExtResource( 7 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite2" type="Sprite" parent="Left Wall"]
+position = Vector2( 31.9866, 0 )
+texture = ExtResource( 7 )
+
+[node name="Sprite3" type="Sprite" parent="Left Wall"]
+position = Vector2( 63.9715, -0.00836182 )
+texture = ExtResource( 7 )
+
+[node name="Sprite5" type="Sprite" parent="Left Wall"]
+position = Vector2( 95.9676, -0.00498199 )
+texture = ExtResource( 7 )
+
+[node name="Sprite6" type="Sprite" parent="Left Wall"]
+position = Vector2( 127.967, -0.00481415 )
+texture = ExtResource( 7 )
+
+[node name="Sprite7" type="Sprite" parent="Left Wall"]
+position = Vector2( 159.969, -0.00853729 )
+texture = ExtResource( 7 )
+
+[node name="Sprite8" type="Sprite" parent="Left Wall"]
+position = Vector2( 191.969, -0.0133057 )
+texture = ExtResource( 7 )
+
+[node name="Sprite9" type="Sprite" parent="Left Wall"]
+position = Vector2( 223.963, -0.00708771 )
+texture = ExtResource( 7 )
+
+[node name="Sprite10" type="Sprite" parent="Left Wall"]
+position = Vector2( 255.959, -0.00865173 )
+texture = ExtResource( 7 )
+
+[node name="Sprite11" type="Sprite" parent="Left Wall"]
+position = Vector2( 287.969, -0.0136948 )
+texture = ExtResource( 7 )
+
+[node name="Sprite12" type="Sprite" parent="Left Wall"]
+position = Vector2( 319.969, -0.0188675 )
+texture = ExtResource( 7 )
+
+[node name="Right Wall" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 832, 48 )
+rotation = 1.5708
+scale = Vector2( 1.5, 1 )
+texture = ExtResource( 7 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite2" type="Sprite" parent="Right Wall"]
+position = Vector2( 31.9866, 0 )
+texture = ExtResource( 7 )
+
+[node name="Sprite3" type="Sprite" parent="Right Wall"]
+position = Vector2( 63.9715, -0.00836182 )
+texture = ExtResource( 7 )
+
+[node name="Sprite4" type="Sprite" parent="Right Wall"]
+position = Vector2( 95.9676, -0.00498199 )
+texture = ExtResource( 7 )
+
+[node name="Sprite6" type="Sprite" parent="Right Wall"]
+position = Vector2( 127.967, -0.00481415 )
+texture = ExtResource( 7 )
+
+[node name="Sprite7" type="Sprite" parent="Right Wall"]
+position = Vector2( 159.969, -0.00853729 )
+texture = ExtResource( 7 )
+
+[node name="Sprite8" type="Sprite" parent="Right Wall"]
+position = Vector2( 191.969, -0.0133057 )
+texture = ExtResource( 7 )
+
+[node name="Sprite9" type="Sprite" parent="Right Wall"]
+position = Vector2( 223.963, -0.00708771 )
+texture = ExtResource( 7 )
+
+[node name="Sprite10" type="Sprite" parent="Right Wall"]
+position = Vector2( 255.959, -0.00865173 )
+texture = ExtResource( 7 )
+
+[node name="Sprite11" type="Sprite" parent="Right Wall"]
+position = Vector2( 287.969, -0.0136948 )
+texture = ExtResource( 7 )
+
+[node name="Sprite12" type="Sprite" parent="Right Wall"]
+position = Vector2( 319.969, -0.0188675 )
+texture = ExtResource( 7 )
+
+[node name="Eye R" type="Sprite" parent="."]
+position = Vector2( 840, 60 )
+scale = Vector2( 1.83333, 1.875 )
+texture = ExtResource( 8 )
+
+[node name="Eye R2" type="Sprite" parent="."]
+position = Vector2( 832.08, 511.439 )
+scale = Vector2( 1.83333, 1.875 )
+texture = ExtResource( 8 )
+
+[node name="Eye L" type="Sprite" parent="."]
+position = Vector2( 184, 60 )
+scale = Vector2( 1.83333, 1.875 )
+texture = ExtResource( 8 )
+flip_h = true
+
+[node name="Eye L2" type="Sprite" parent="."]
+position = Vector2( 184, 516 )
+scale = Vector2( 1.83333, 1.875 )
+texture = ExtResource( 8 )
+flip_h = true
 [connection signal="pressed" from="Easy Button" to="." method="_on_Easy_Button_pressed"]
 [connection signal="pressed" from="Medium Button" to="." method="_on_Medium_Button_pressed"]
 [connection signal="pressed" from="Hard Button" to="." method="_on_Hard_Button_pressed"]
