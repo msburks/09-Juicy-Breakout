@@ -374,6 +374,7 @@ margin_top = 352.156
 margin_right = 932.794
 margin_bottom = 371.156
 custom_fonts/font = SubResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Lives: "
 script = ExtResource( 11 )
 
@@ -383,6 +384,7 @@ margin_top = 280.254
 margin_right = 939.231
 margin_bottom = 300.254
 custom_fonts/font = SubResource( 8 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Score: "
 script = ExtResource( 12 )
 

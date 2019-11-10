@@ -46,7 +46,7 @@ color_ramp = SubResource( 3 )
 
 [sub_resource type="DynamicFont" id=7]
 size = 25
-outline_color = Color( 0.972549, 0.901961, 0.901961, 1 )
+outline_color = Color( 0.972549, 0.901961, 0.921569, 1 )
 font_data = ExtResource( 8 )
 
 [sub_resource type="DynamicFont" id=8]
@@ -336,6 +336,7 @@ margin_top = 276.757
 margin_right = 960.958
 margin_bottom = 300.757
 custom_fonts/font = SubResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Score: "
 script = ExtResource( 9 )
 
@@ -345,6 +346,7 @@ margin_top = 353.324
 margin_right = 955.64
 margin_bottom = 377.324
 custom_fonts/font = SubResource( 8 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Lives: "
 script = ExtResource( 10 )
 
