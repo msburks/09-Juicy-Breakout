@@ -1,6 +1,6 @@
 # Juicy Breakout
 
-I have created a story mode, whereas I could ass as many levels as would like to, but for this case i have only included a couple.
+I have created a story mode, whereas I could add as many levels as would like to, but for this case I have only included a couple.
 
 There is a page signaling you have won the game, as well as one letting you know that you lost.
 
